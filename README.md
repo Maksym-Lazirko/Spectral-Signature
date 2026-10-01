@@ -379,21 +379,6 @@ The broader ideas in [PRODUCT-NOTES.md](source/Spectral%20Signature/Spectral%20C
 
 For a reproducible issue, record the plugin version, Windows version, host/version, sample rate, block size, bus layout, settings, and steps to reproduce. Include relevant test output and a minimal non-sensitive example where possible. No issue-tracker or repository URL is assumed here.
 
-## Dependencies and licensing
-
-The primary framework is [JUCE 8.0.12 at the pinned commit](https://github.com/juce-framework/JUCE/tree/29396c22c93392d6738e021b83196283d6e4d850). Its source is offered under AGPLv3 or the applicable commercial JUCE license. The included VST3 SDK and other framework dependencies retain their own notices and terms.
-
-Relevant files:
-
-- [JUCE license](dependencies/JUCE/LICENSE.md).
-- [Bundled VST3 SDK license](dependencies/JUCE/modules/juce_audio_processors_headless/format_types/VST3_SDK/LICENSE.txt).
-- [Third-party/provenance notes](THIRD-PARTY-NOTICES.txt).
-- The copied notices under `Licenses/` and the original notices within the dependency source.
-
-**Project license status:** no separate application redistribution license was present in the supplied Spectral Signature materials. This README does not assign a license, grant new redistribution rights, or imply that the plugin itself has been released under a particular open-source license. Co-author credits do not replace license terms. Dependency licenses remain applicable.
-
-No external FFT DLL, browser runtime, online activation system, or global installer is added by this build. Development tools are prerequisites and are not included in the package.
-
 ## Co-authors
 
 - **Maksym Lazirko**
