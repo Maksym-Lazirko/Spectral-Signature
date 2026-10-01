@@ -92,7 +92,7 @@ Copy the compiled plugin to:
 
 ## Usage
 
-1. Open your DAW (Digital Audio Workstation)
+1. Open your DAW or standalone plugin-compatible application
 2. Scan for new plugins
 3. Insert **Spectral Signature** on an audio track or bus
 4. Use the frequency visualization to analyze your audio
