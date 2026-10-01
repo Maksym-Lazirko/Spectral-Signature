@@ -24,8 +24,6 @@ The pattern can become visible in a spectrogram, depending on the audio, setting
 
 Paths in this README assume the layout of the combined source-and-VST3 package, with this file at its root. The same layout can be retained in a repository.
 
-![Spectral Signature interface with text mask preview and grouped controls](validation/Spectral-Signature-editor-final.png)
-
 ## How it works
 
 The mask is read from left to right over a repeating cycle. Its vertical axis maps to frequency, with higher frequencies at the top. Brighter mask regions produce stronger engraving after threshold, contrast, smoothing, and protection settings are applied.
