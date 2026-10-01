@@ -1,6 +1,6 @@
 # Spectral Signature
 
-**Text and image spectral engraving for audio masters.**
+**Text and image spectral engraving for audio**
 
 **Co-authors: Maksym Lazirko and Henmoro™**
 
