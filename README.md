@@ -1,4 +1,4 @@
-# Spectral Signature
+# Spectral Signature 
 
 **Text and image spectral engraving for audio**
 
