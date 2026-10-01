@@ -331,26 +331,6 @@ A separate source-built JUCE host scanned and loaded the compiled release bundle
 
 These checks establish tested behavior in the custom host. They do **not** establish compatibility with every DAW, scanner, automation workflow, or offline-render implementation.
 
-### Build and archive checks
-
-The x64 module was inspected for ASLR, high-entropy addressing, NX, Control Flow Guard, and dynamic-library imports. No separate Microsoft C++ runtime DLL was required by its inspected imports.
-
-Archive integrity and SHA-256 manifests were checked. The combined package's source matches the finished working copy and its VST3 matches the tested binary. A fresh extraction of the source package configured successfully and built JUCE's build helper from the packaged source; the full plugin test results above come from the verified release build.
-
-See [VALIDATION.md](VALIDATION.md), [native results](validation/processor-tests-final.log), [VST3 host results](validation/host-validation-final.log), and [CTest results](validation/ctest-final.log).
-
-## What changed in 1.0.1
-
-- Corrected reconstruction normalization, inverse-FFT scaling, and DC/Nyquist handling.
-- Replaced the fallback FFT path with an instance-owned implementation using preallocated tables.
-- Aligned dry and processed paths and made latency stable across quality changes.
-- Corrected bypass timing and removed dry leakage from contribution audition modes.
-- Protected mask buffers while readers use them and coalesced worker requests.
-- Bounded image/state input and made image recall independent of external file paths.
-- Retained the last valid image after decode failure, including through save/reopen.
-- Corrected Windows text/image raster readback so the mask contains completed pixels.
-- Redesigned the interface and retained all existing parameter IDs and ordering.
-- Added an offline CMake build, regression tests, independent host checks, and clearer documentation.
 
 ## Limits and deferred features
 
