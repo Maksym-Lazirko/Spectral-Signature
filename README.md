@@ -158,17 +158,6 @@ The combined package is named:
 Spectral-Signature-1.0.1-Source-and-VST3.zip
 ```
 
-After extraction, the ready-to-load bundle is:
-
-```text
-Plugin/
-└── Spectral Signature.vst3/
-    └── Contents/
-        ├── Resources/
-        └── x86_64-win/
-            └── Spectral Signature.vst3
-```
-
 1. Keep the **outer `Spectral Signature.vst3` directory and all its contents together**. Do not copy only the inner binary or rename it to `.dll`.
 2. Put the bundle in a VST3 location supported by the host. Common Windows locations are `%LOCALAPPDATA%\Programs\Common\VST3` and `C:\Program Files\Common Files\VST3`; use the host's documented workflow, since supported locations can differ.
 3. Rescan plugins in the host and load **Spectral Signature**, listed with manufacturer **Lazirko Records**.
